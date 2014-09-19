@@ -50,12 +50,3 @@ for i in 0..10
     end
     puts "i = #{i}. I start to count only when i will be equal to 6!"
 end
-
-#retry
-
-for i in 0..10
-    if i > 5
-        retry
-    end
-    puts "I will count from 0 to 5 over and over again"
-end
