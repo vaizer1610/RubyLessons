@@ -1,53 +1,57 @@
-#Ruby loops
+# #Ruby loops
 
-#while statement
+# #while statement
 
-# while true
-#     puts "I will print it over and over again!!!"
+# # while true
+# #     puts "I will print it over and over again!!!"
+# # end
+
+
+# counter = 0
+
+# while counter < 5
+#     puts "Inside the loop counter = #{counter}" ##{counter} is a string interpolation
+#     counter = counter + 1 #better way to increment counter is   counter += 1
 # end
 
 
-counter = 0
+# #until statement
 
-while counter < 5
-    puts "Inside the loop counter = #{counter}" ##{counter} is a string interpolation
-    counter = counter + 1 #better way to increment counter is   counter += 1
-end
+# counter = 0
+# until counter == 5
+#     puts "Inside the loop counter = #{counter}"
+#     counter += 1
+# end
 
+# #for statement
 
-#until statement
+# for i in 0..10 # 0..10 is a range
+#     puts "i = #{i}"
+# end
 
-counter = 0
-until counter == 5
-    puts "Inside the loop counter = #{counter}"
-    counter += 1
-end
+# #break
 
-#for statement
+# counter = 0
 
-for i in 0..10 # 0..10 is a range
-    puts "i = #{i}"
-end
-
-#break
-
-counter = 0
-
-while counter < 5
-    if counter == 3
-        break
-        puts "I AM NEVER HAVE BEEN EXECUTED"
-    end
-    counter += 1
-    puts "I can print in only three times before break... :("
-end
+# while counter < 5
+#     if counter == 3
+#         break
+#         puts "I AM NEVER HAVE BEEN EXECUTED"
+#     end
+#     counter += 1
+#     puts "I can print in only three times before break... :("
+# end
 
 
-#next
+# #next
 
-for i in 0..10
-    if i < 5
-        next
-    end
-    puts "i = #{i}. I start to count only when i will be equal to 6!"
-end
+# for i in 0..10
+#     if i < 5
+#         next
+#     end
+#     puts "i = #{i}. I start to count only when i will be equal to 6!"
+# end
+
+10.times do puts "hello" end
+
+
