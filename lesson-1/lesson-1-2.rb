@@ -2,9 +2,9 @@
 
 #while statement
 
-while true
-    puts "I will print it over and over again!!!"
-end
+# while true
+#     puts "I will print it over and over again!!!"
+# end
 
 
 counter = 0
@@ -29,7 +29,6 @@ for i in 0..10 # 0..10 is a range
     puts "i = #{i}"
 end
 
-
 #break
 
 counter = 0
@@ -37,7 +36,9 @@ counter = 0
 while counter < 5
     if counter == 3
         break
+        puts "I AM NEVER HAVE BEEN EXECUTED"
     end
+    counter += 1
     puts "I can print in only three times before break... :("
 end
 
