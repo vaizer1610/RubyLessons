@@ -1,21 +1,18 @@
-#1. Нужно обрабовать выражения типа 1 + 2 + 3 + 4
-#2. При вводе ключевого слова 'once' в запросе нужно выполнить вычисление один раз
-# Доп. задание
-#3. В случае некорректного ввода пользователя вывести сообщение с описанием поддерживаемых операций. Отрабовать команду 
-# "help". 
+# 1. Доделать once. Один раз считает и выходит
 
 
 def comands_input(input_text = "Введите команду:")
 	puts input_text
 	br = false
+	once = false
 	user_input = gets.chomp
 	if user_input == "exit"
 		br = true
 	elsif user_input == "once"
-		#puts "Введите выражение для вычисления: "
+		once = true
 	end
 
-	return {:input => user_input, :break => br}
+	return {:input => user_input, :break => br, :once => once }
 end
 
 def parse_input(input)
